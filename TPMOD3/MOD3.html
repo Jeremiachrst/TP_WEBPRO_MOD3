@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding-left: 1rem;
+      }
+      .ProfilePicture,
+      .VideoPerkenalan {
+        width: 15rem;
+        height: 15rem;
+      }
+      table {
+        width: 30rem;
+        text-align: center;
+        margin-left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Profil Pribadi</h3>
+    <!-- Menggunakan heading H3 agar ukuran teks lebih kecil dari H1 dan H2 -->
+    <table>
+      <!-- Menggunakan tabel untuk menyusun elemen agar lebih rapi -->
+      <tr>
+        <!-- Membuat baris pertama tabel -->
+        <th>Foto Profil</th>
+        <!-- Kolom header untuk judul "Foto Profil" -->
+        <th>Video Perkenalan</th>
+        <!-- Kolom header untuk judul "Video Perkenalan" -->
+      </tr>
+      <tr>
+        <!-- Membuat baris kedua untuk menampilkan konten -->
+        <td>
+          <!-- Kolom pertama untuk gambar profil -->
+          <img src="PP.jpg" alt="ProfilePicture" class="ProfilePicture" />
+          <!-- Menampilkan gambar profil dengan kelas CSS untuk ukuran -->
+        </td>
+        <td>
+          <!-- Kolom kedua untuk video perkenalan -->
+          <video controls src="VP.mp4" class="VideoPerkenalan"></video>
+          <!-- Menampilkan video dengan kontrol pemutaran -->
+        </td>
+      </tr>
+    </table>
+    <div class="DataDiri">
+      <!-- Bagian div untuk data diri pengguna -->
+      <h4>Data Diri :</h4>
+      <!-- Menggunakan heading H4 agar lebih kecil dari H3 -->
+      <ul>
+        <!-- Membuat daftar tidak berurut (unordered list) -->
+        <li><b>Nama : </b> Jeremia Christian Putra</li>
+        <!-- Menampilkan nama pengguna dengan teks tebal -->
+        <li><b>NIM : </b> 1303223157</li>
+        <!-- Menampilkan NIM dengan teks tebal -->
+        <li><b>Kelas : </b> IT-46-03</li>
+        <!-- Menampilkan kelas dengan teks tebal -->
+        <li><b>Program Studi : </b> S1 Teknologi Informasi</li>
+        <!-- Menampilkan program studi dengan teks tebal -->
+        <li><b>Fakultas : </b> Informatika</li>
+        <!-- Menampilkan fakultas dengan teks tebal -->
+      </ul>
+    </div>
+    <div class="Contact">
+      <!-- Bagian div untuk formulir kontak -->
+      <h4>Contact</h4>
+      <!-- Heading H4 untuk judul bagian Contact -->
+      <form action="POST">
+        <!-- Membuat form dengan metode POST -->
+        <ul>
+          <!-- Daftar tidak berurut untuk field kontak -->
+          <li>
+            Nama : <input type="text" name="NamaPengirim" id="NamaPengirim" />
+            <!-- Input teks untuk nama pengirim -->
+          </li>
+          <li>
+            Email :
+            <input type="text" name="EmailPengirim" id="EmailPengirim" />
+            <!-- Input teks untuk email pengirim -->
+          </li>
+          <li>
+            Pesan :
+            <!-- Label untuk textarea pesan -->
+            <div>
+              <textarea
+                name="Pesan"
+                id="Pesan"
+                style="margin-left: 50px; height: 5rem"
+              >
+              </textarea>
+              <!-- Textarea untuk memasukkan pesan pengirim -->
+            </div>
+            <div>
+              <button type="submit">Kirim Pesan</button>
+              <!-- Tombol untuk mengirim pesan -->
+            </div>
+          </li>
+          <li>
+            Media Sosial :
+            <!-- Label untuk tautan media sosial -->
+            <a href="www.instagram.com">Instagram</a>
+            <!-- Tautan ke Instagram -->
+            <a href="www.linkedin.com">Linkedin</a>
+            <!-- Tautan ke LinkedIn -->
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
